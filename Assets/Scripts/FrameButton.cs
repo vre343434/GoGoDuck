@@ -15,7 +15,7 @@ public class FrameButton : MonoBehaviour
     {
         myItem = items;
         buttonImage.GetComponent<Image>().sprite = myItem.GetItemImage();
-        buttonQuantity.GetComponent<Text>().text = myItem.GetInitalQuantity().ToString();
+        buttonQuantity.GetComponent<Text>().text = myItem.GetQuantity().ToString();
     }
 
     public void ShowDescription()

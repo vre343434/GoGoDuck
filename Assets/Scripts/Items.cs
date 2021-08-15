@@ -12,6 +12,7 @@ public class Items : ScriptableObject
     [SerializeField] string itemDescribe;
     [SerializeField] Sprite itemImage;
     [SerializeField] int initialQuantity;
+    [SerializeField] int quantity;
 
     public int GetItemNumber()
     {
@@ -38,11 +39,27 @@ public class Items : ScriptableObject
         return initialQuantity;
     }
 
-    public int SetInitalQuantity()
+    public int GetQuantity()
     {
-        return initialQuantity + 1;
+        return quantity;
     }
 
+    public int AddQuantity()
+    {
+        quantity += 1;
+        return quantity;
+    }
+
+    public int MinusQuantity()
+    {
+        quantity -= 1;
+        return quantity;
+    }
+
+    public void ResetQuantity()
+    {
+        quantity = initialQuantity;
+    }
 
 
 }

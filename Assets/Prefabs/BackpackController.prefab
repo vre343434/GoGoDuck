@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BackpackInterface: {fileID: 0}
-  Description: {fileID: 0}
+  DescriptionInterface: {fileID: 0}
   itemContent: {fileID: 0}
   itemPrefab: {fileID: 0}
   itemsDetail:
@@ -57,3 +57,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d53124ed032b5d34ca826612a72e26a5, type: 2}
   - {fileID: 11400000, guid: 90202537e303fd3488673952bc4d3cfb, type: 2}
   - {fileID: 11400000, guid: 7c18110abb0765441ad1f91bc41fa87f, type: 2}
+  IsBackpackOpen: 1
+  resetQuantity: 1

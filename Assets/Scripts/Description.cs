@@ -9,14 +9,16 @@ public class Description : MonoBehaviour
     [SerializeField] GameObject descriptionImage;
     [SerializeField] GameObject descriptionQuantity;
     [SerializeField] GameObject descriptionText;
-    [SerializeField] GameObject useButton;
+    [SerializeField] UseButtonControl useButton;
 
     public void SetDescription(Items item)
     {
         descriptionName.GetComponent<Text>().text = item.GetItemName();
         descriptionImage.GetComponent<Image>().sprite = item.GetItemImage();
-        descriptionQuantity.GetComponent<Text>().text = item.GetInitalQuantity().ToString();
+        descriptionQuantity.GetComponent<Text>().text = item.GetQuantity().ToString();
         descriptionText.GetComponent<Text>().text = item.GetItemDescribe();
+        useButton.SetItem(item);
     }
+
 
 }

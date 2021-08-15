@@ -8,20 +8,21 @@ public class BackpackControl : MonoBehaviour
 {
 
     [SerializeField] GameObject BackpackInterface;
-    [SerializeField] GameObject Description;
+    [SerializeField] GameObject DescriptionInterface;
     [SerializeField] GameObject itemContent;
     [SerializeField] GameObject itemPrefab;
     [SerializeField] Items[] itemsDetail;
 
-    bool IsBackpackOpen = false;
+    [SerializeField] bool IsBackpackOpen = false;
+    [SerializeField] bool resetQuantity = false;
 
     private void Start()
     {
-        ItemFramesCreate();
+        ItemFramesRefresh();
     }
 
 
-    public void ItemFramesCreate()
+    public void ItemFramesRefresh()
     {
         //問題:物件從Hierarchy拉才能讀取到當前Description，無法從prefab拉
         //修改:prefab framebutton留一個隱藏作為複製依據
@@ -33,9 +34,19 @@ public class BackpackControl : MonoBehaviour
             Destroy(itemContent.transform.GetChild(childCount).gameObject);
         }
 
+        if (resetQuantity)
+        {
+            foreach (Items item in itemsDetail)
+            {
+                item.ResetQuantity();
+            }
+            resetQuantity = false;
+        }
+
+
         foreach (Items item in itemsDetail)
         {
-            if (item.GetInitalQuantity() <= 0)
+            if (item.GetQuantity() <= 0)
                 continue;                      
 
             GameObject newItem = Instantiate(itemPrefab, itemContent.transform) as GameObject;
@@ -46,17 +57,19 @@ public class BackpackControl : MonoBehaviour
 
     public void OpenBackpack()
     {
+        ItemFramesRefresh();
         IsBackpackOpen = !IsBackpackOpen;
         BackpackInterface.SetActive(IsBackpackOpen);
     }
 
     public void OpenDescribe()
     {
-        Description.SetActive(true);
+        ItemFramesRefresh();
+        DescriptionInterface.SetActive(true);
     }
 
     public void CloseDescribe()
     {
-        Description.SetActive(false);
+        DescriptionInterface.SetActive(false);
     }
 }

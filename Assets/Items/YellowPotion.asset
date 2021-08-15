@@ -17,3 +17,4 @@ MonoBehaviour:
   itemDescribe: "\u4E0D\u65B7\u5192\u6CE1\u7684\u4E0D\u77E5\u540D\u9EC3\u8272\u85E5\u6C34\uFF0C\u672A\u5C01\u84CB"
   itemImage: {fileID: 21300000, guid: 7b3e670774c060f49909943c0c9de1da, type: 3}
   initialQuantity: 1
+  quantity: 1

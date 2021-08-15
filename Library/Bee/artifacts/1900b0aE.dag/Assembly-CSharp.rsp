@@ -300,6 +300,12 @@
 -r:"D:/Program Files/Unity/2021.1.11f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll"
 -r:"D:/Program Files/Unity/2021.1.11f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"D:/Program Files/Unity/2021.1.11f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
+-r:"D:/Repos/Unity2D/GoGoDuck/GoGoDuck/Library/PackageCache/com.unity.burst@1.5.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll"
+-r:"D:/Repos/Unity2D/GoGoDuck/GoGoDuck/Library/PackageCache/com.unity.burst@1.5.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll"
+-r:"D:/Repos/Unity2D/GoGoDuck/GoGoDuck/Library/PackageCache/com.unity.burst@1.5.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll"
+-r:"D:/Repos/Unity2D/GoGoDuck/GoGoDuck/Library/PackageCache/com.unity.burst@1.5.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll"
+-r:"D:/Repos/Unity2D/GoGoDuck/GoGoDuck/Library/PackageCache/com.unity.burst@1.5.4/Unity.Burst.Unsafe.dll"
+-r:"D:/Repos/Unity2D/GoGoDuck/GoGoDuck/Library/PackageCache/com.unity.collections@1.0.0-pre.3/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll"
 -r:"D:/Repos/Unity2D/GoGoDuck/GoGoDuck/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
 -r:"D:/Repos/Unity2D/GoGoDuck/GoGoDuck/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/PsdPlugin.ref.dll"
@@ -320,6 +326,9 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Tilemap.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Tilemap.Extras.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Tilemap.Extras.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Burst.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Burst.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Collections.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.InternalAPIEditorBridge.001.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.InternalAPIEngineBridge.001.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Mathematics.Editor.ref.dll"
@@ -348,6 +357,7 @@
 "Assets/Scripts/GetItem.cs"
 "Assets/Scripts/Items.cs"
 "Assets/Scripts/Player.cs"
+"Assets/Scripts/UseButtonControl.cs"
 -langversion:8.0
 
 /deterministic

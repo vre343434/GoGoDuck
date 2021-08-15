@@ -1,0 +1,25 @@
+{
+  "name": "com.unity.collections",
+  "displayName": "Collections",
+  "version": "1.0.0-pre.3",
+  "unity": "2020.3",
+  "unityRelease": "0f1",
+  "dependencies": {
+    "com.unity.burst": "1.5.3",
+    "com.unity.test-framework": "1.1.22"
+  },
+  "description": "A C# collections library providing data structures that can be used in jobs, and optimized by Burst compiler.",
+  "keywords": [
+    "dots",
+    "collections",
+    "unity"
+  ],
+  "upmCi": {
+    "footprint": "90d77e2adf436effa58c7a593e416b139b544019"
+  },
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/dots.git",
+    "type": "git",
+    "revision": "e9408fa5fc82192a68fd2b728be4c7cf2285e67e"
+  }
+}
