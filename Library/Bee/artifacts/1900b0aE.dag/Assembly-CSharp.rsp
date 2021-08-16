@@ -353,10 +353,11 @@
 "Assets/Scripts/BackpackControl.cs"
 "Assets/Scripts/CameraFlow.cs"
 "Assets/Scripts/Description.cs"
+"Assets/Scripts/EndPlate.cs"
 "Assets/Scripts/FrameButton.cs"
-"Assets/Scripts/GetItem.cs"
 "Assets/Scripts/Items.cs"
 "Assets/Scripts/Player.cs"
+"Assets/Scripts/SpawnItems.cs"
 "Assets/Scripts/UseButtonControl.cs"
 -langversion:8.0
 

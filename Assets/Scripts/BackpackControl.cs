@@ -7,10 +7,13 @@ using UnityEngine.UI;
 public class BackpackControl : MonoBehaviour
 {
 
-    [SerializeField] GameObject BackpackInterface;
-    [SerializeField] GameObject DescriptionInterface;
+    [SerializeField] GameObject backpackInterface;
+    [SerializeField] GameObject descriptionInterface;
+    [SerializeField] GameObject messageInterface;
+    [SerializeField] Player player;
     [SerializeField] GameObject itemContent;
     [SerializeField] GameObject itemPrefab;
+    [SerializeField] Transform startPlate;
     [SerializeField] Items[] itemsDetail;
 
     [SerializeField] bool IsBackpackOpen = false;
@@ -59,17 +62,45 @@ public class BackpackControl : MonoBehaviour
     {
         ItemFramesRefresh();
         IsBackpackOpen = !IsBackpackOpen;
-        BackpackInterface.SetActive(IsBackpackOpen);
+        backpackInterface.SetActive(IsBackpackOpen);
     }
 
     public void OpenDescribe()
     {
         ItemFramesRefresh();
-        DescriptionInterface.SetActive(true);
+        descriptionInterface.SetActive(true);
     }
 
     public void CloseDescribe()
     {
-        DescriptionInterface.SetActive(false);
+        descriptionInterface.SetActive(false);
+    }
+
+    public void OpenMessage()
+    {
+        messageInterface.SetActive(true);
+    }
+
+    public void CloseMessage()
+    {
+        messageInterface.SetActive(false);
+    }
+
+    public bool GetMessageActive()
+    {
+        return messageInterface.activeSelf;
+    }
+
+    public void ReStartGame()
+    {
+        resetQuantity = true;
+        ItemFramesRefresh();
+        player.SetPlayerLocation(new Vector2(startPlate.position.x, startPlate.position.y));
+        CloseMessage();
+    }
+
+    public Items[] GetItems()
+    {
+        return itemsDetail;
     }
 }
