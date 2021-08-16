@@ -30,7 +30,6 @@ public class Player : MonoBehaviour
 
     private void Move()
     {
-        //todo¹Á¸Õ­×§ï¬°Kinematic
 
         var horizontal = Input.GetAxis("Horizontal");
         var deltaX = horizontal * Time.deltaTime * moveSpeed;

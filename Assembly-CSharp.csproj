@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\UseButtonControl.cs" />
+    <Compile Include="Assets\Scripts\EndPlate.cs" />
     <Compile Include="Assets\Scripts\BackpackControl.cs" />
     <Compile Include="Assets\Scripts\SpawnItems.cs" />
     <Compile Include="Assets\Scripts\Items.cs" />
@@ -67,7 +68,6 @@
     <Compile Include="Assets\Scripts\CameraFlow.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\FrameButton.cs" />
-    <Compile Include="Assets\Scripts\EndPlate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

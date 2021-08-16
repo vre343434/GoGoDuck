@@ -43,10 +43,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3608d831bc10194586c99f5ebae7514, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BackpackInterface: {fileID: 0}
-  DescriptionInterface: {fileID: 0}
+  backpackInterface: {fileID: 0}
+  descriptionInterface: {fileID: 0}
+  messageInterface: {fileID: 0}
+  player: {fileID: 0}
   itemContent: {fileID: 0}
   itemPrefab: {fileID: 0}
+  startPlate: {fileID: 0}
   itemsDetail:
   - {fileID: 11400000, guid: 257c68425ba4bca43b61aac721696999, type: 2}
   - {fileID: 11400000, guid: 09c649260734f3841ae1a35eae9e0749, type: 2}
@@ -57,5 +60,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d53124ed032b5d34ca826612a72e26a5, type: 2}
   - {fileID: 11400000, guid: 90202537e303fd3488673952bc4d3cfb, type: 2}
   - {fileID: 11400000, guid: 7c18110abb0765441ad1f91bc41fa87f, type: 2}
-  IsBackpackOpen: 1
+  IsBackpackOpen: 0
   resetQuantity: 1
